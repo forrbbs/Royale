@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royale's reservations</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/638e7f1a4e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <img src="logo.jpeg">
+                    <h1><span>R</span>oyale</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservations</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+        </div>
+    <form class="form">
+        <div class="title-header">
+            <h1><span>R</span><span class="new">oyale Restaurant</span></h1>
+        </div>
+        <div class="established"><p>Reserve your spot.</p></div>
+        <hr>
+
+        <div class="name-item">
+            <p class="item">Name</p>
+            <input type="text" placeholder="First Name" class="name-input" required>
+            <input type="text" placeholder="Last Name" class="name-input" required>
+        </div>
+
+        <div class="name-item">
+            <p class="item">Email</p>
+            <input type="text" placeholder="example@gmail.com" class="email-phone-input" required>
+        </div>
+        <div class="name-phone-item">
+            <p class="item">Phone Number</p>
+            <input type="text" placeholder="Please enter a valid phone number" class="email-phone-input" required>
+        </div>
+        <hr>
+
+        <div class="guest-item">
+            <label for="guest" class="guest-label">Number of guests
+                <select id="guest" class="guest-input" required>
+                    <option value="">Please make a selection</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </label>
+        </div>
+        <div class="name-item">
+            <p class="item">Reservation Date</p>
+            <input type="date" class="name-input" required>
+            <p class="item">Time</p>
+            <input type="time" class="name-input" required>
+        </div>
+
+        <div class="notes">
+            <label for="special-notes" class="label-notes">Special Notes</label>
+            <textarea class="input-notes" id="special-notes" name="special-notes" cols="30" rows="3" placeholder="Write something..."></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" id="reserveBtn">
+        </div>
+        <hr>
+        <footer class="footer">
+            <a href="index.html">Go back to home page</a>
+        </footer>
+        </div>    
+    </form>
+
+    </div>
+<div class="feedback">
+    <i class="fa fa-regular fa-circle-check"></i>
+    <h2>You have been booked successfully!</h2>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(https://media.istockphoto.com/id/1365553240/photo/view-from-above-of-a-variety-of-filipino-cuisine-dishes.jpg?s=612x612&w=0&k=20&c=1Nnk-0URnfaT-tjSvTCnVvPcCG7DLFz-1WjuBkgUg9I=);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+    position: relative;
+    padding:100px 0;
+}
+nav img{
+    max-width:80px;
+    max-height: 120px;
+    border-radius: 40px;
+  }
+  nav h1{
+    color:white;
+    font-size:25px;
+    font-family: 'Philosopher', sans-serif;
+  }
+  nav{
+    display: flex;
+    padding: 1px 7%;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -60px;
+  }
+  .nav-links{
+    text-align: right;
+    flex: 1;
+  }
+  .nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ffd700;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  nav .fa{
+    display:none;
+  }
+  nav .fa:hover{
+    cursor: pointer;
+  }
+
+
+ 
+ 
+
+.menu{
+    width:70%;
+    margin:auto;
+    background-color: burlywood;
+    max-width: 700px;
+    padding: 55px;
+    border-style: none;
+    border-radius: 10px;
+    color:rgb(36, 36, 36);
+    margin-top: 50px;
+}
+.title-header{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+}
+span{
+    color: #ffd700;
+  }
+
+.new{
+    color:white;
+}
+
+.established{
+ text-align: center;
+ padding: 0.7rem 0;
+ font-style: italic;
+}
+hr {
+    height: 3px;
+    background-color: brown;
+    border: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+.title-dish{
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'Philosopher', sans-serif;
+}
+.fa{
+    font-size: 37px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.item p{
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item .meal{
+    width: 69%;
+}
+.item .price{
+    width:29%;
+    text-align: right;
+}
+
+.footer{
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color:rgb(36, 36, 36);
+}
+
+@media (max-width:450px){
+
+  .menu{
+    max-width: 200px;
+    padding: 50px;
+  }
+  .title-header h1{
+    font-size: 27px;
+  }
+  .fa{
+    font-size: 31px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.item p{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .item .meal{
+    width:49%;
+}
+.item .price{
+    width:41%;
+    text-align: right;
+}
+}
+  
+@media (max-width:700px) {
+  .container{
+      overflow: hidden;  
+  }
+  .nav-links{
+    position: absolute;
+    background: #ffd700;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 4;
+    transition: 1s;
+    
+  }
+  nav{
+      margin-bottom: 34px;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul{
+    padding: 20px;  
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav .fa-times{
+      margin-right: 170px;
+  }
+  nav .fa-bars{
+    animation: bounce 2s ease-in-out infinite;
+    padding-bottom: 30px;
+  }
+
+  .title-header{
+      font-size: 18px;
+  }
+  @keyframes bounce{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+
+}
+
+@media (max-width:1024px) {
+  .container{
+      overflow: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    background: #ffd700;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 4;
+    transition: 1s;
+    
+  }
+  nav{
+      margin-bottom:45px;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul{
+    padding: 20px;  
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav .fa-times{
+      margin-right: 170px;
+  }
+  nav .fa-bars{
+    animation: bounce 2s ease-in-out infinite;
+    padding-bottom: 30px;
+  }
+
+  .title-header{
+      font-size: 18px;
+  }
+  @keyframes bounce{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+
+}

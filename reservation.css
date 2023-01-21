@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(https://media.istockphoto.com/id/1317237593/photo/danish-food.jpg?s=612x612&w=0&k=20&c=UK7S8JtXHMgiykl3fGfbOtHuqvZVwEjThdVngVfEaHI=);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    position: relative;
+    padding:100px 0;
+
+
+    
+}
+
+.containerblur{
+  filter: blur(0.1rem);
+}
+
+nav img{
+    max-width:80px;
+    max-height: 120px;
+    border-radius: 40px;
+  }
+  nav h1{
+    color:white;
+    font-size:25px;
+    font-family: 'Philosopher', sans-serif;
+  }
+  nav{
+    display: flex;
+    padding: 1px 7%;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -60px;
+  }
+  .nav-links{
+    text-align: right;
+    flex: 1;
+  }
+  .nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ffd700;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  nav .fa{
+    display:none;
+  }
+  nav .fa:hover{
+    cursor: pointer;
+  }
+   
+  span{
+    color: #ffd700;
+  }
+
+.new{
+    color:white;
+}
+.form{
+    width:70%;
+    margin:auto;
+    background-color: burlywood;
+    max-width: 700px;
+    padding: 55px;
+    border-style: none;
+    border-radius: 10px;
+    color:rgb(36, 36, 36);
+}
+.title-header{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+}
+.established{
+    text-align: center;
+    padding: 0.7rem 0;
+    font-style: italic;
+   }
+   hr {
+       height: 3px;
+       background-color: brown;
+       border: 0;
+       margin-top: 8px;
+       margin-bottom: 8px;
+     }
+
+     .name-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 35px;
+     }
+     .item{
+        display: inline-block;
+        width: 30%;
+     }
+
+     .name-input{
+        border: 0.5px solid brown;
+        height: 30px;
+        width:30% ;
+        padding: 7px;
+        border-radius: 10px;
+     }
+     .email-phone-input{
+        border: 0.5px solid brown;
+        height: 30px;
+        width:65% ;
+        padding: 7px;
+        border-radius: 10px;
+     }
+     .name-phone-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+     }
+     .guest-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 35px;
+     }
+     .guest-label{
+        display: inline-block;
+     }
+     .guest-input{
+        border: 0.5px solid brown;
+        height: 50px;
+        width:463px ;
+        padding: 7px;
+        border-radius: 10px;
+        margin-left: 113px;
+        margin-bottom: 35px;
+     }
+.notes{
+    margin-top: 20px;
+}
+ .label-notes{
+        display: block;
+ }
+ .input-notes{
+    margin-top: 15px;
+    width: 97%;
+    height:80px;
+    border: 0.5px solid brown;
+    padding: 10px;
+     border-radius: 10px;
+     margin-bottom: 25px;
+ }
+
+.submit{
+  text-align: center;
+}
+.submit #reserveBtn{
+  padding: 12px;
+  border:  0.5px solid brown;
+  border-radius: 10px;
+  background-color: brown;
+  color:burlywood;
+}
+.submit button:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submit button:active{
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+ 
+.footer{
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color:rgb(36, 36, 36);
+}
+
+
+
+  .feedback{
+    background-color: brown;
+    width: 21%;
+    height: 200px;
+    border-radius: 10px;
+    color:burlywood;
+    font-family: cursive;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: -1;
+
+  }
+  .feedback .fa{
+    padding: 25px;
+    font-size: 50px;
+  }
+
+  .feedbackShow{
+    z-index: 1;
+  }
+
+
+  @media (max-width:440px){
+    .guest-input{
+      max-width: 210px;
+    }
+    .feedback{
+      background-color: brown;
+      width:41%;
+      border-radius: 10px;
+      color:burlywood;
+      font-family: cursive;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      z-index: -1;
+  
+    }
+    .feedbackShow{
+      z-index: 1;
+    }
+    .feedback .fa{
+      padding: 10px;
+      font-size: 25px;
+    }
+    .feedback h2{
+      font-size: 17px;
+      padding: 10px;
+    }
+  
+  }
+  
+  @media (max-width:700px) {
+  
+    .container{
+      overflow: hidden;
+    }
+      .nav-links{
+        position: absolute;
+        background: #ffd700;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 4;
+        transition: 1s;
+        
+      }
+      nav{
+          margin-bottom: 34px;
+      }
+      nav ul li{
+        display: block;
+      }
+      nav ul{
+        padding: 20px;  
+      }
+      nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+      }
+      nav .fa-times{
+          margin-right: 170px;
+      }
+      nav .fa-bars{
+        animation: bounce 2s ease-in-out infinite;
+        padding-bottom: 30px;
+      }
+  
+      .title-header{
+          font-size: 18px;
+      }
+  
+      .name-item{
+          display: flex;
+          flex-direction: column;
+  
+      }
+      .item{
+          display: block;
+          width: 90%;
+      }
+      .name-input{
+          width: 90%;
+          margin: 10px 0;
+      }
+      .email-phone-input{
+          width: 90%;
+          margin: 10px 0;
+      }
+      .name-phone-item{
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .guest-item{
+          display: flex;
+          flex-direction: column;
+      }
+      .guest-label{
+          display: block;
+          width: 90%;
+       }
+       .guest-input{
+          border: 0.5px solid brown;
+          height: 50px;
+          width:330px ;
+          padding: 7px;
+          border-radius: 10px;
+          margin-left:-2px;
+          margin-bottom: 35px;
+          margin-top: 15px;
+       }
+  
+  
+  
+      @keyframes bounce{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(1.5);
+        }
+        100%{
+          transform: scale(1);
+        }
+      }
+  
+  
+  
+    }
+  
+    @media(min-width:701px) and ( max-width:1024px) {
+  
+      .container{
+        overflow: hidden;
+      }
+  
+      .nav-links{
+        position: absolute;
+        background: #ffd700;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 4;
+        transition: 1s;
+        
+      }
+      nav{
+          margin-bottom:45px;
+      }
+      nav ul li{
+        display: block;
+      }
+      nav ul{
+        padding: 20px;  
+      }
+      nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+      }
+      nav .fa-times{
+          margin-right: 170px;
+      }
+      nav .fa-bars{
+        animation: bounce 2s ease-in-out infinite;
+        padding-bottom: 30px;
+      }
+  
+      .title-header{
+          font-size: 18px;
+      }
+      @keyframes bounce{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(1.5);
+        }
+        100%{
+          transform: scale(1);
+        }
+      }
+  
+      .guest-label{
+        display: block;
+        width: 50%;
+     }
+     .guest-input{
+        border: 0.5px solid brown;
+        height: 50px;
+        width:330px ;
+        padding: 7px;
+        border-radius: 10px;
+        margin-left:-2px;
+        margin-bottom: 35px;
+        margin-top: 15px;
+     }
+     .item{
+      padding: 10px;
+     }
+
+  
+    }
